@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const missions = () => {
-  return <div></div>;
-};
+const missions = () => <div />;
 
 export default missions;

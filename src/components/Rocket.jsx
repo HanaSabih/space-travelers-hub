@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const Rocket = () => {
-  return <div></div>;
-};
+const Rocket = () => <div />;
 
 export default Rocket;

@@ -1,9 +1,9 @@
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Container } from "react-bootstrap";
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Container } from 'react-bootstrap';
 
-import Rocket from "../components/Rocket";
-import { getRockets } from "../redux/Rockets/rocketSlice";
+import Rocket from './Rocket';
+// import { getRockets } from "../redux/Rockets/rocketSlice";
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ const Rockets = () => {
 
   useEffect(() => {
     if (rockets.length === 0) {
-      dispatch(getRockets());
+      // dispatch(getRockets());
     }
   }, [dispatch, rockets]);
 

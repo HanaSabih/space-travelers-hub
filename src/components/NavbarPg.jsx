@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const NavbarPg = () => {
-  return <div></div>;
-};
+const NavbarPg = () => <div />;
 
 export default NavbarPg;
