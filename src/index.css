@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #000;
+}
+/* body {
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Muli", sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0;
+} */
