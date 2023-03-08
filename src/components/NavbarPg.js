@@ -4,13 +4,23 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import logo from "../assets/images/planet.png";
 
 const NavbarPg = () => {
   return (
-    <div>
+    <Container>
       <Navbar bg="light" expand="xl" className="mb-3">
         <Container fluid>
-          <Navbar.Brand href="/">Space Travelers' Hub</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              src={logo}
+              width="50"
+              height="30"
+              className="d-inline-block align-top me-3"
+              alt="Space Travelers' Hub"
+            />
+            Space Travelers' Hub
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-xl" />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-xl"
@@ -33,7 +43,7 @@ const NavbarPg = () => {
         </Container>
       </Navbar>
       <Outlet />
-    </div>
+    </Container>
   );
 };
 
