@@ -16,17 +16,7 @@ a{
   text-decoration: none;
 }
 
-.linkNvb {
-  
-  margin-left: 1.5rem;
-}
-.linkNvb:hover {
-  color: darkorange;
-}
-.homeTitle{
-  min-width: 60vh;
-  min-height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
