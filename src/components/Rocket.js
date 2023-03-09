@@ -17,7 +17,7 @@ const Rocket = ({ rocket }) => {
   };
 
   return (
-    <Card className="my-3  bg-dark text-white ">
+    <Card className="my-3  bg-dark text-white flex-row ">
       <Card.Img src={flickrImages} className="w-25" />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
@@ -38,7 +38,7 @@ const Rocket = ({ rocket }) => {
         )}
         {rocket.reserved && (
           <Button
-            variant="secondary"
+            variant="outline-warning"
             type="button"
             onClick={reserveRocketHandler}
           >
