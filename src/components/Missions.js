@@ -1,31 +1,31 @@
 import React, { useDispatch, useSelector } from 'react-redux';
+import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
 import { joinMission, leaveMission } from '../redux/missions/missions';
-import '../styles/Missions.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions.list);
   const dispatch = useDispatch();
   return (
-    <div>
-      <table className="missions-table">
+    <Container className="mt-3">
+      <Table striped bordered hover variant="dark">
         <thead>
           <tr>
-            <th className="missions-table-th">Mission</th>
-            <th className="missions-table-th">Description</th>
-            <th className="missions-table-th">Status</th>
-            <th className="missions-table-th"> </th>
+            <th className="fs-4 text-warning">Mission</th>
+            <th className="fs-4 text-warning">Description</th>
+            <th className="fs-4 text-warning">Status</th>
+            <th className=" text-dark">.</th>
           </tr>
         </thead>
-        <tbody className="missions-tbody">
+        <tbody>
           {missions.map((mission) => (
             <tr key={mission.mission_id}>
-              <td className="mission-name">{mission.mission_name}</td>
+              <td className="mission-name fw-bold ">{mission.mission_name}</td>
               <td className="mission-description">{mission.description}</td>
               <td className="mission-status">
                 {mission.reserved ? (
-                  <Button variant="primary" className="active-member-btn">
+                  <Button variant="success" className="active-member-btn">
                     Active Member
                   </Button>
                 ) : (
@@ -35,14 +35,14 @@ const Missions = () => {
               <td className="mission-join-leave">
                 {mission.reserved ? (
                   <Button
-                    variant="outline-danger"
+                    variant="outline-warning"
                     onClick={() => dispatch(leaveMission(mission.mission_id))}
                   >
                     Leave Mission
                   </Button>
                 ) : (
                   <Button
-                    variant="outline-dark"
+                    variant="warning"
                     onClick={() => dispatch(joinMission(mission.mission_id))}
                   >
                     Join Mission
@@ -52,8 +52,8 @@ const Missions = () => {
             </tr>
           ))}
         </tbody>
-      </table>
-    </div>
+      </Table>
+    </Container>
   );
 };
 

@@ -8,6 +8,7 @@ import NavbarPg from './components/NavbarPg';
 import NoPage from './components/NoPage';
 import Home from './components/Home';
 import { getMissions } from './redux/missions/missions';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const dispatch = useDispatch();

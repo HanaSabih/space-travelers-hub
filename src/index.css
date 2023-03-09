@@ -1,0 +1,21 @@
+body {
+  background-image: url("./Assets/universe-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* nav */
+
+.logo-img {
+  width: 70px;
+  height: 40px;
+}
+
+.activeLink {
+  text-decoration: underline;
+}
+
+.nonActiveLink {
+  text-decoration: none;
+}
