@@ -1,10 +1,11 @@
+
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navigation from '../components/Navigation';
+import NavbarPg from '../components/NavbarPg';
 
 it('renders correctly', () => {
   const navigation = renderer
-    .create(<Router><Navigation /></Router>)
+    .create(<Router><NavbarPg /></Router>)
     .toJSON();
   expect(navigation).toMatchSnapshot();
 });

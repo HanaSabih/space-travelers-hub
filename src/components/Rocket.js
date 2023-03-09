@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Button from 'react-bootstrap/Button';
-import { useDispatch } from 'react-redux';
-import Card from 'react-bootstrap/Card';
-import { reserveRocket } from '../redux/Rockets/rocketSlice';
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "react-bootstrap/Button";
+import { useDispatch } from "react-redux";
+import Card from "react-bootstrap/Card";
+import { reserveRocket } from "../redux/Rockets/rocketSlice";
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const Rocket = ({ rocket }) => {
   };
 
   return (
-    <Card className="my-3  bg-dark text-white flex-row ">
+    <Card className="my-3  bg-dark text-white flex-row border border-warning">
       <Card.Img src={flickrImages} className="w-25" />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
@@ -47,40 +47,6 @@ const Rocket = ({ rocket }) => {
         )}
       </Card.Body>
     </Card>
-    // <div className="rocket-container">
-    //   <div className="rocket-details-container">
-    //     <div className="img-container">
-    //       <img src={flickrImages} alt="rocket-img" />
-    //     </div>
-    //     <div className="rocket-details">
-    //       <span className="rocket-name">{name}</span>
-    //       <p className="rocket-description">
-    //         {rocket.reserved && (
-    //           <span className="rocket-reserved">Reserved</span>
-    //         )}
-    //         {description}
-    //       </p>
-    //       {!rocket.reserved && (
-    //         <Button
-    //           variant="primary"
-    //           type="button"
-    //           onClick={reserveRocketHandler}
-    //         >
-    //           Reserve Rocket
-    //         </Button>
-    //       )}
-    //       {rocket.reserved && (
-    //         <Button
-    //           variant="outline-secondary"
-    //           type="button"
-    //           onClick={reserveRocketHandler}
-    //         >
-    //           Cancel Reservation
-    //         </Button>
-    //       )}
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

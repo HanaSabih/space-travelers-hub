@@ -12,10 +12,21 @@ body {
   height: 40px;
 }
 
-.activeLink {
-  text-decoration: underline;
+a{
+  text-decoration: none;
 }
 
-.nonActiveLink {
-  text-decoration: none;
+.linkNvb {
+  
+  margin-left: 1.5rem;
+}
+.linkNvb:hover {
+  color: darkorange;
+}
+.homeTitle{
+  min-width: 60vh;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

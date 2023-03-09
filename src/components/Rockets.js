@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from 'react-redux';
-import React, { useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import Rocket from './Rocket';
-import { getRockets } from '../redux/Rockets/rocketSlice';
+import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import Container from "react-bootstrap/Container";
+import Rocket from "./Rocket";
+import { getRockets } from "../redux/Rockets/rocketSlice";
 
 const Rockets = () => {
   const rocketsList = useSelector((state) => state.rockets);

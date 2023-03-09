@@ -1,6 +1,6 @@
-import { useSelector } from 'react-redux';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
+import { useSelector } from "react-redux";
+import Container from "react-bootstrap/Container";
+import Table from "react-bootstrap/Table";
 
 const MyProfile = () => {
   const rocketsList = useSelector((state) => state.rockets);
@@ -10,7 +10,13 @@ const MyProfile = () => {
   const reservedMissions = missionsList.filter((mission) => mission.reserved);
   return (
     <Container className="mt-3 d-flex gap-5">
-      <Table striped bordered hover variant="dark">
+      <Table
+        striped
+        bordered
+        hover
+        variant="dark"
+        className=" border border-warning"
+      >
         <thead>
           <tr className="fs-3 text-warning">
             <th>My Missions</th>
@@ -24,7 +30,13 @@ const MyProfile = () => {
           ))}
         </tbody>
       </Table>
-      <Table striped bordered hover variant="dark">
+      <Table
+        striped
+        bordered
+        hover
+        variant="dark"
+        className=" border border-warning"
+      >
         <thead>
           <tr>
             <th className="fs-3 text-warning">My Rockets</th>

@@ -1,15 +1,21 @@
-import React, { useDispatch, useSelector } from 'react-redux';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Table from 'react-bootstrap/Table';
-import { joinMission, leaveMission } from '../redux/missions/missions';
+import React, { useDispatch, useSelector } from "react-redux";
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+import Table from "react-bootstrap/Table";
+import { joinMission, leaveMission } from "../redux/missions/missions";
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions.list);
   const dispatch = useDispatch();
   return (
     <Container className="mt-3">
-      <Table striped bordered hover variant="dark">
+      <Table
+        striped
+        bordered
+        hover
+        variant="dark"
+        className=" border border-warning"
+      >
         <thead>
           <tr>
             <th className="fs-4 text-warning">Mission</th>
