@@ -16,9 +16,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 Bookstore CMS <a name="about-project"></a>
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
-**Bookstore** in this project, i create a Bookstore using React.
+**Space Travelers' Hub** in this project, i create a Space Travelers' Hub.
 
 ## 🛠 Built With <a name="built-with"></a>
 
