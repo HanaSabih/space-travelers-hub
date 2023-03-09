@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Button from "react-bootstrap/Button";
-import { useDispatch } from "react-redux";
-import Card from "react-bootstrap/Card";
-import { reserveRocket } from "../redux/Rockets/rocketSlice";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
+import { useDispatch } from 'react-redux';
+import Card from 'react-bootstrap/Card';
+import { reserveRocket } from '../redux/Rockets/rocketSlice';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();

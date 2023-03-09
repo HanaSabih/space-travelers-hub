@@ -57,6 +57,9 @@ exports[`renders correctly 1`] = `
         >
           Missions
         </a>
+        <div
+          className="vr bg-white mx-3"
+        />
         <a
           className=" text-white linkNvb"
           href="/my-profile"

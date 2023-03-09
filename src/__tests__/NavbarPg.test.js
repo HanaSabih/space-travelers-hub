@@ -1,4 +1,3 @@
-
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavbarPg from '../components/NavbarPg';

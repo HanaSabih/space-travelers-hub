@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import MyProfile from "./components/MyProfile";
-import Rockets from "./components/Rockets";
-import Missions from "./components/Missions";
-import NavbarPg from "./components/NavbarPg";
-import NoPage from "./components/NoPage";
-import Home from "./components/Home";
-import { getMissions } from "./redux/missions/missions";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect } from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import MyProfile from './components/MyProfile';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import NavbarPg from './components/NavbarPg';
+import NoPage from './components/NoPage';
+import Home from './components/Home';
+import { getMissions } from './redux/missions/missions';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const dispatch = useDispatch();
