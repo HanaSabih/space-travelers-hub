@@ -15,11 +15,12 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt=""
-        className="d-inline-block align-top me-2"
+        className="d-inline-block align-top"
         height="40"
         src="planet.png"
         width="50"
       />
+       
       Space Travelers‘ Hub
     </a>
     <button
@@ -57,7 +58,7 @@ exports[`renders correctly 1`] = `
           Missions
         </a>
         <div
-          className="vr bg-white mx-4"
+          className="vr bg-white mx-3"
         />
         <a
           className=" text-white linkNvb"

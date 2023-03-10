@@ -13,14 +13,14 @@ const Missions = () => {
         striped
         bordered
         hover
-        variant="light"
-        className="border"
+        variant="dark"
+        className=" border border-warning"
       >
         <thead>
           <tr>
-            <th className="fs-4">Mission</th>
-            <th className="fs-4">Description</th>
-            <th className="fs-4">Status</th>
+            <th className="fs-4 text-warning">Mission</th>
+            <th className="fs-4 text-warning">Description</th>
+            <th className="fs-4 text-warning">Status</th>
             <th className=" text-dark">.</th>
           </tr>
         </thead>
@@ -41,14 +41,14 @@ const Missions = () => {
               <td className="mission-join-leave">
                 {mission.reserved ? (
                   <Button
-                    variant="outline-danger"
+                    variant="outline-warning"
                     onClick={() => dispatch(leaveMission(mission.mission_id))}
                   >
                     Leave Mission
                   </Button>
                 ) : (
                   <Button
-                    variant="outline-secondary"
+                    variant="warning"
                     onClick={() => dispatch(joinMission(mission.mission_id))}
                   >
                     Join Mission

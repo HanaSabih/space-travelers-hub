@@ -8,29 +8,30 @@ const NavbarPg = () => (
   <Navbar
     collapseOnSelect
     expand="lg"
-    bg="light"
-    variant="light"
+    bg="dark"
+    variant="dark"
     className=" border-bottom  "
   >
     <Container>
-      <NavLink to="/" className="fw-bolder fs-3 text-dark">
+      <NavLink to="/" className="fw-bolder fs-3 text-white">
         <img
           alt=""
           src={logo}
           width="50"
           height="40"
-          className="d-inline-block align-top me-2"
+          className="d-inline-block align-top"
         />
+        {' '}
         Space Travelers&lsquo; Hub
       </NavLink>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className="fs-5 ">
         <Nav className="me-auto  flex-grow-1 pe-3 justify-content-end ">
           <NavLink
-            to="/"
+            to="rockets"
             className={({ isActive }) => (isActive
-              ? 'linkNvb text-black fw-bold border-top border-bottom border-dark'
-              : ' text-dark linkNvb')}
+              ? 'linkNvb text-warning fw-bold border-top border-bottom border-warning'
+              : ' text-white linkNvb')}
           >
             Rockets
           </NavLink>
@@ -38,17 +39,17 @@ const NavbarPg = () => (
             to="missions"
             end
             className={({ isActive }) => (isActive
-              ? 'linkNvb text-black fw-bold border-top border-bottom border-dark'
-              : ' text-dark linkNvb')}
+              ? 'linkNvb text-warning fw-bold border-top border-bottom border-warning'
+              : ' text-white linkNvb')}
           >
             Missions
           </NavLink>
-          <div className="vr bg-white mx-4" />
+          <div className="vr bg-white mx-3" />
           <NavLink
             to="my-profile"
             className={({ isActive }) => (isActive
-              ? 'linkNvb text-black fw-bold border-top border-bottom border-dark'
-              : ' text-dark linkNvb')}
+              ? 'linkNvb text-warning fw-bold border-top border-bottom border-warning'
+              : ' text-white linkNvb')}
           >
             My Profile
           </NavLink>

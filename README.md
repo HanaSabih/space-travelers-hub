@@ -18,7 +18,7 @@
 
 # 📖 Space Travelers' Hub <a name="about-project"></a>
 
-**Space Travelers Hub** in this project, i create a Space Travelers' Hub.
+**Space Travelers' Hub** in this project, i create a Space Travelers' Hub.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,7 +36,7 @@ HTML | CSS | JS | ES6 | React
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [live link](https://space-travelers-hub-zt2c.onrender.com/)
+- [UNAVAILABLE]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
