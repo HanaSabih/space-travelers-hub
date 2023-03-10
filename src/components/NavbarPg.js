@@ -44,6 +44,7 @@ const NavbarPg = () => (
           >
             Missions
           </NavLink>
+          <div className="vr bg-white mx-3" />
           <NavLink
             to="my-profile"
             className={({ isActive }) => (isActive

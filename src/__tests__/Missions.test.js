@@ -6,31 +6,31 @@ import Missions from '../components/Missions';
 import missions from '../redux/missions/missions';
 
 const createTestStore = () => {
-    const store = configureStore({
-        reducer: {
-            missions,
-        },
-    });
+  const store = configureStore({
+    reducer: {
+      missions,
+    },
+  });
 
-    return store;
+  return store;
 };
 export default createTestStore;
 
 describe('My Connected React-Redux Component', () => {
-    let store;
-    let component;
+  let store;
+  let component;
 
-    beforeEach(() => {
-        store = createTestStore();
+  beforeEach(() => {
+    store = createTestStore();
 
-        component = renderer.create(
-            <Provider store={store}>
-                <Missions />
-            </Provider>,
-        ).toJSON();
-    });
+    component = renderer.create(
+      <Provider store={store}>
+        <Missions />
+      </Provider>,
+    ).toJSON();
+  });
 
-    test('renders correctly', () => {
-        expect(component).toMatchSnapshot();
-    });
+  test('renders correctly', () => {
+    expect(component).toMatchSnapshot();
+  });
 });
