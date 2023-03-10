@@ -19,9 +19,8 @@ const NavbarPg = () => (
           src={logo}
           width="50"
           height="40"
-          className="d-inline-block align-top"
+          className="d-inline-block align-top me-2"
         />
-        {' '}
         Space Travelers&lsquo; Hub
       </NavLink>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -44,7 +43,7 @@ const NavbarPg = () => (
           >
             Missions
           </NavLink>
-          <div className="vr bg-white mx-3" />
+          <div className="vr bg-white mx-4" />
           <NavLink
             to="my-profile"
             className={({ isActive }) => (isActive
