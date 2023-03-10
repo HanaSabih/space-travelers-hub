@@ -8,12 +8,12 @@ const NavbarPg = () => (
   <Navbar
     collapseOnSelect
     expand="lg"
-    bg="dark"
-    variant="dark"
+    bg="light"
+    variant="light"
     className=" border-bottom  "
   >
     <Container>
-      <NavLink to="/" className="fw-bolder fs-3 text-white">
+      <NavLink to="/" className="fw-bolder fs-3 text-dark">
         <img
           alt=""
           src={logo}
@@ -27,10 +27,10 @@ const NavbarPg = () => (
       <Navbar.Collapse id="responsive-navbar-nav" className="fs-5 ">
         <Nav className="me-auto  flex-grow-1 pe-3 justify-content-end ">
           <NavLink
-            to="rockets"
+            to="/"
             className={({ isActive }) => (isActive
-              ? 'linkNvb text-warning fw-bold border-top border-bottom border-warning'
-              : ' text-white linkNvb')}
+              ? 'linkNvb text-black fw-bold border-top border-bottom border-dark'
+              : ' text-dark linkNvb')}
           >
             Rockets
           </NavLink>
@@ -38,8 +38,8 @@ const NavbarPg = () => (
             to="missions"
             end
             className={({ isActive }) => (isActive
-              ? 'linkNvb text-warning fw-bold border-top border-bottom border-warning'
-              : ' text-white linkNvb')}
+              ? 'linkNvb text-black fw-bold border-top border-bottom border-dark'
+              : ' text-dark linkNvb')}
           >
             Missions
           </NavLink>
@@ -47,8 +47,8 @@ const NavbarPg = () => (
           <NavLink
             to="my-profile"
             className={({ isActive }) => (isActive
-              ? 'linkNvb text-warning fw-bold border-top border-bottom border-warning'
-              : ' text-white linkNvb')}
+              ? 'linkNvb text-black fw-bold border-top border-bottom border-dark'
+              : ' text-dark linkNvb')}
           >
             My Profile
           </NavLink>

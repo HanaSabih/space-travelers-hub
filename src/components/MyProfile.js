@@ -14,11 +14,11 @@ const MyProfile = () => {
         striped
         bordered
         hover
-        variant="dark"
-        className=" border border-warning"
+        variant="light"
+        className=" border"
       >
         <thead>
-          <tr className="fs-3 text-warning">
+          <tr className="fs-3 text-dark">
             <th>My Missions</th>
           </tr>
         </thead>
@@ -34,12 +34,12 @@ const MyProfile = () => {
         striped
         bordered
         hover
-        variant="dark"
-        className=" border border-warning"
+        variant="light"
+        className=" border"
       >
         <thead>
           <tr>
-            <th className="fs-3 text-warning">My Rockets</th>
+            <th className="fs-3 text-dark">My Rockets</th>
           </tr>
         </thead>
         <tbody>
