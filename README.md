@@ -18,7 +18,7 @@
 
 # 📖 Space Travelers' Hub <a name="about-project"></a>
 
-**Space Travelers' Hub** in this project, i create a Space Travelers' Hub.
+**Space Travelers' Hub** Single Page Application which displays lists of Rockets and Missions with information from the SpaceX API. It allows a user to make reservations for rockets or join missions. Said rockets and missions are then displayed in the MyProfile page.
 
 ## 🛠 Built With <a name="built-with"></a>
 
